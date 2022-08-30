@@ -37,6 +37,7 @@ function App() {
     todoNameRef.current.value = null
   }
 
+  //clear finished todos
   function handleClearTodos() {
     const newTodos = todos.filter(todo => !todo.complete)
     setTodos(newTodos)
@@ -44,11 +45,11 @@ function App() {
 
   return (
     <>
-      <h1>My React Native To-Do List⚛</h1>
+      <h1>To-Do List⚛</h1>
       <TodoList todos={todos} toggleTodo={toggleTodo} />
       <input ref={todoNameRef} type="text" />
       <button onClick={handleAddTodo}>Add+</button>
-      <button onClick={handleClearTodos}>Clear Complete</button>
+      <button onClick={handleClearTodos}>Clear Completed Tasks</button>
       <div>{todos.filter(todo => !todo.complete).length} left to do</div>
     </>
   )
