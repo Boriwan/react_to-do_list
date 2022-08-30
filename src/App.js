@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import TodoList from "./TodoList";
+import Button from 'react-bootstrap/Button';
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos'
 
@@ -45,12 +46,17 @@ function App() {
 
   return (
     <>
-      <h1>To-Do List⚛</h1>
-      <TodoList todos={todos} toggleTodo={toggleTodo} />
-      <input ref={todoNameRef} type="text" />
-      <button onClick={handleAddTodo}>Add+</button>
-      <button onClick={handleClearTodos}>Clear Completed Tasks</button>
-      <div>{todos.filter(todo => !todo.complete).length} left to do</div>
+      <h1 className="text-center">To-Do List⚛</h1>
+
+      <div className="d-flex flex-row justify-content-center align-items-center">
+        <div>
+          <input ref={todoNameRef} type="text" />
+          <Button onClick={handleAddTodo}>Add+</Button>
+          <Button variant="danger" onClick={handleClearTodos}>Clear Completed Tasks</Button>
+          <TodoList todos={todos} toggleTodo={toggleTodo} />
+          <p>{todos.filter(todo => !todo.complete).length} left to do</p>
+        </div>
+      </div>
     </>
   )
 }
