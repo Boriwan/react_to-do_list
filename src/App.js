@@ -53,12 +53,12 @@ function App() {
           <div className="input-group mb-3">
             <input className='form-control' ref={todoNameRef} type='text' />
             <div className="input-group-append">
-              <button className='btn btn-add' onClick={handleAddTodo}>Add+</button>
+              <button className='btn btn-add' onClick={handleAddTodo}>Add＋</button>
             </div>
           </div>
           <TodoList todos={todos} toggleTodo={toggleTodo} />
           <p>{todos.filter(todo => !todo.complete).length} left to do</p>
-          <button className='btn btn-clear' onClick={handleClearTodos}>Clear Completed Tasks</button>
+          <button className='btn btn-clear' onClick={handleClearTodos}>Clear Completed Tasks 🗑</button>
         </div>
       </div>
     </>

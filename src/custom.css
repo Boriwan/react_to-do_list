@@ -18,6 +18,10 @@ p {
     color: #36DFF8;
 }
 
+p {
+    font-weight: bold;
+}
+
 .btn-add,
 .card {
     background-color: #5C6CA4 !important;
@@ -30,11 +34,11 @@ p {
 }
 
 .btn-clear {
-    background-color: #00D8F9 !important;
-    border-color: #00D8F9 !important;
+    background-color: #067384 !important;
+    border-color: #067384 !important;
     color: #FFFFFF !important;
 }
 
 .btn-clear:hover {
-    background-color: #00b2cd !important;
+    background-color: #055c69 !important;
 }
