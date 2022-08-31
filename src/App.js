@@ -61,8 +61,6 @@ function App() {
           <button className='btn btn-clear' onClick={handleClearTodos}>Clear Completed Tasks</button>
         </div>
       </div>
-
-      <footer className='text-center'>© 2022 Boris Boček</footer>
     </>
   )
 }
