@@ -5,11 +5,15 @@ export default function Todo({ todo, toggleTodo }) {
         toggleTodo(todo.id)
     }
     return (
-        <div>
-            <label>
-                <input type="checkbox" checked={todo.complete} onChange={handleTodoClick} />
-                {todo.name}
-            </label>
-        </div>
+        <>
+                <div className='card'>
+                    <div class='card-body'>
+                        <label className='d-flex justify-content-between'>
+                            <input type='checkbox' checked={todo.complete} onChange={handleTodoClick} />
+                            <h5 className='card-title'>{todo.name}</h5>
+                        </label>
+                    </div>
+                </div>
+        </>
     )
 }

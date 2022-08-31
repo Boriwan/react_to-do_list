@@ -1,0 +1,37 @@
+/*
+colors
+#00D8F9
+#36DFF8
+#056D89
+#5C6CA4
+#B6CBD2
+#2D405C
+*/
+
+body {
+    background-color: #2D405C !important;
+}
+
+h1, h5, p {
+    color: #36DFF8;
+}
+
+.btn-add {
+    background-color: #5C6CA4 !important;
+    border-color: #5C6CA4 !important;
+    color: #36DFF8 !important;
+}
+
+.btn-add:hover {
+    background-color: #4c5989 !important;
+}
+
+.btn-clear {
+    background-color: #00D8F9 !important;
+    border-color: #00D8F9 !important;
+    color: #FFFFFF !important;
+}
+
+.btn-clear:hover {
+    background-color: #00b2cd !important;
+}
