@@ -10,7 +10,7 @@ export default function Todo({ todo, toggleTodo }) {
                 <div className='card'>
                     <div class='card-body'>
                         <div className='form-check'>
-                        <input className='form-check-input' type='checkbox' checked={todo.complete} onChange={handleTodoClick} />
+                            <input className='form-check-input' type='checkbox' checked={todo.complete} onChange={handleTodoClick} />
                             <label className='form-check-label'>
                                 {todo.name}
                             </label>
