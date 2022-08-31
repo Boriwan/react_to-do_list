@@ -16,7 +16,7 @@ h1, h5, p {
     color: #36DFF8;
 }
 
-.btn-add {
+.btn-add, .card {
     background-color: #5C6CA4 !important;
     border-color: #5C6CA4 !important;
     color: #36DFF8 !important;
